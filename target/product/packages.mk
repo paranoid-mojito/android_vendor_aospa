@@ -46,6 +46,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemePicker
 
+# Gamespace
+ifneq (,$(wildcard packages/apps/GameSpace))
+PRODUCT_PACKAGES += \
+    GameSpace
+endif
+
 # Gestures
 PRODUCT_PACKAGES += \
     vendor.aospa.power-service
